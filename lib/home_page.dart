@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
+
+class HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,7 +50,9 @@ class HomePage extends StatelessWidget {
                       padding: const EdgeInsets.all(8.0),
                       child: Column(
                         children: <Widget>[
-                          Padding(padding: EdgeInsets.all(1),),
+                          Padding(
+                            padding: EdgeInsets.all(1),
+                          ),
                           SizedBox(
                               width: 80,
                               height: 80,
@@ -74,7 +83,9 @@ class HomePage extends StatelessWidget {
                                 width: 70,
                                 height: 70,
                               ),
-                              Padding(padding: EdgeInsets.all(1),),
+                              Padding(
+                                padding: EdgeInsets.all(1),
+                              ),
                               SizedBox(
                                 child: Image.network(
                                   'https://media.allure.com/photos/5bf1b1502ab5072a91e1853a/2:1/w_3431,h_1715,c_limit/travel%20editor%20favorite%20products.jpg',
@@ -83,7 +94,9 @@ class HomePage extends StatelessWidget {
                                 width: 70,
                                 height: 70,
                               ),
-                              Padding(padding: EdgeInsets.all(1),),
+                              Padding(
+                                padding: EdgeInsets.all(1),
+                              ),
                               SizedBox(
                                 child: Image.network(
                                   'https://media.allure.com/photos/5bf1b1502ab5072a91e1853a/2:1/w_3431,h_1715,c_limit/travel%20editor%20favorite%20products.jpg',
@@ -94,16 +107,22 @@ class HomePage extends StatelessWidget {
                               ),
                             ],
                           ),
-                          Padding(padding: EdgeInsets.all(4),),
+                          Padding(
+                            padding: EdgeInsets.all(4),
+                          ),
                           Text('Facebook 친구'),
-                          Padding(padding: EdgeInsets.all(4),),
+                          Padding(
+                            padding: EdgeInsets.all(4),
+                          ),
                           RaisedButton(
                             onPressed: () {},
                             child: Text('팔로우'),
                             color: Colors.blueAccent,
                             textColor: Colors.white,
                           ),
-                          Padding(padding: EdgeInsets.all(4),),
+                          Padding(
+                            padding: EdgeInsets.all(4),
+                          ),
                         ],
                       ),
                     ),
