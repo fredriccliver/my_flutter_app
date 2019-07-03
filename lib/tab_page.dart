@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/home_page.dart';
-import 'package:webview_flutter/webview_flutter.dart';
+import 'package:my_app/search_page.dart';
+import 'package:my_app/views/account_page.dart';
+import 'package:my_app/views/search_page.dart';
 
 class TabPage extends StatefulWidget {
   @override
@@ -9,12 +11,7 @@ class TabPage extends StatefulWidget {
 
 class _TabPageState extends State<TabPage> {
   int _selectedIndex = 0;
-  List _pages = [
-    HomePage(),
-    Text('page2'),
-    Text('page3'),
-    WebView(javascriptMode: JavascriptMode.unrestricted,initialUrl: 'https://google.com',)
-  ];
+  List _pages = [HomePage(), NewCardPage(),SearchPage(), AccountPage(), Text('page4')];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,6 +23,8 @@ class _TabPageState extends State<TabPage> {
         currentIndex: _selectedIndex,
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home')),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.add_box), title: Text('NewCard')),
           BottomNavigationBarItem(
               icon: Icon(Icons.search), title: Text('Search')),
           BottomNavigationBarItem(

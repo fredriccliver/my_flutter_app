@@ -142,13 +142,10 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.8"
-  webview_flutter:
-    dependency: "direct main"
-    description:
-      name: webview_flutter
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.3.1"
 sdks:
+<<<<<<< HEAD
   dart: ">=2.2.2 <3.0.0"
   flutter: ">=0.11.9 <2.0.0"
+=======
+  dart: ">=2.2.0 <3.0.0"
+>>>>>>> f50a0113284d6f455a7d886b7756fd5a327c2b2a
