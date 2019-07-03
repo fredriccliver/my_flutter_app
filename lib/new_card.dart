@@ -14,7 +14,6 @@ class _NewCardPageState extends State<NewCardPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
@@ -22,7 +21,8 @@ class _NewCardPageState extends State<NewCardPage> {
           RaisedButton(
             child: Text('MaterialPageRoute'),
             onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>MakeBasicNote()));
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => MakeBasicNote()));
             },
           ),
           RaisedButton(

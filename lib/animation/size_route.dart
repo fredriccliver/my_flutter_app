@@ -17,6 +17,7 @@ class SizeRoute extends PageRouteBuilder {
           ) =>
               Align(
                 child: SizeTransition(
+                  
                   sizeFactor: animation,
                   child: child,
                 ),

@@ -1,3 +1,4 @@
+import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -90,9 +91,13 @@ class _AccountPageState extends State<AccountPage> {
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 18),
           ),
+          
         ],
+        
       ),
+      
     );
+    
   }
 
   Widget _buildAppBar() {

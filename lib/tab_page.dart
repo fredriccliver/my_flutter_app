@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/home_page.dart';
-import 'package:my_app/search_page.dart';
+import 'package:my_app/new_card.dart';
 import 'package:my_app/views/account_page.dart';
 import 'package:my_app/views/search_page.dart';
 
