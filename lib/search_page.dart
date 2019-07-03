@@ -5,12 +5,12 @@ import 'package:my_app/views/make_basic_note.dart';
 
 import 'animation/slide_right_route.dart';
 
-class SearchPage extends StatefulWidget {
+class NewCardPage extends StatefulWidget {
   @override
-  _SearchPageState createState() => _SearchPageState();
+  _NewCardPageState createState() => _NewCardPageState();
 }
 
-class _SearchPageState extends State<SearchPage> {
+class _NewCardPageState extends State<NewCardPage> {
   @override
   Widget build(BuildContext context) {
     return Container(

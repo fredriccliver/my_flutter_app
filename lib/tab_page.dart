@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/home_page.dart';
 import 'package:my_app/search_page.dart';
+import 'package:my_app/views/account_page.dart';
+import 'package:my_app/views/search_page.dart';
 
 class TabPage extends StatefulWidget {
   @override
@@ -9,7 +11,7 @@ class TabPage extends StatefulWidget {
 
 class _TabPageState extends State<TabPage> {
   int _selectedIndex = 0;
-  List _pages = [HomePage(), SearchPage(), Text('page3'), Text('page4')];
+  List _pages = [HomePage(), NewCardPage(),SearchPage(), AccountPage(), Text('page4')];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,6 +25,8 @@ class _TabPageState extends State<TabPage> {
           BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home')),
           BottomNavigationBarItem(
               icon: Icon(Icons.add_box), title: Text('NewCard')),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.search), title: Text('Search')),
           BottomNavigationBarItem(
               icon: Icon(Icons.account_circle), title: Text('Account')),
           BottomNavigationBarItem(
